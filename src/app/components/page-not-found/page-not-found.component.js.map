@@ -1,0 +1,1 @@
+{"version":3,"sources":["page-not-found.component.ts"],"names":[],"mappings":";;;;;;AAAA,OAAO,EAAE,SAAA,EAAU,MAAO,eAAA,CAAgB;AAO1C,IAAa,qBAAqB;IAAlC;IAEA,CAAC;IAAD,4BAAC;AAAD,CAFA,AAEC,IAAA;AAFY,qBAAqB;IALjC,SAAS,CAAC;QACP,QAAQ,EAAE,gBAAgB;QAC1B,WAAW,EAAE,iCAAiC;KAChD,CAAC;GAEU,qBAAqB,CAEjC;SAFY,qBAAqB","file":"page-not-found.component.js","sourceRoot":""}

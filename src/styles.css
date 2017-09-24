@@ -1,1 +1,178 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+    background: #f2f2f2 url(img/pattern-bk-sm.png) repeat left top;
+    font-family: 'Open Sans', sans-serif;
+}
+footer{
+    color:#848484;
+    padding: 7px;
+}
+#about{
+    padding-left:10%;
+    padding-right:10%;
+    padding-top:10px;
+    padding-bottom:10px;
+    position:relative;
+    background: url(img/lights-bk.jpg) repeat;
+
+}
+#about>div{
+    padding:15px;
+    background-color:rgba(255,255,255,0.6);
+}
+#about img{
+    margin:10px;
+    height:90px;
+    width:90px;
+    display: block;
+    margin: 0 auto;
+}
+#about h1{
+    font-size:1rem;
+    font-weight: 700;
+    color:#2980b9;
+}
+#about a{    
+    background: #b74aa0;
+    border: solid 1px #d866c0;
+    padding: 5px 10px;
+    border-radius: 75px;
+    margin:10px 0px;
+    display:inline-block;
+    color: #fff;
+}
+#about a:hover{
+    background: #9f518f;
+    text-decoration: none;
+}
+#skills h2{
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.25rem;
+}
+#skills img{
+    margin:0 auto;
+}
+#contact{
+    background-color:#2c3e50;
+    color: #eee;
+    padding:15px;
+}
+#contact a {
+    color:#fff;
+}
+#contact h4 {
+    font-family:'Lobster', cursive;
+}
+.main{
+    background-color: #fff;
+    padding-left:0;
+    padding-right: 0; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.navbar{
+    margin: 0 15px 0 15px;
+}
+a.navbar-brand{
+    font-family: 'Lobster', cursive;
+}
+img.entypo-icon{
+    display: inline-block;
+    height: 25px;
+    margin:3px;
+}
+a.navbar-brand > span.brand-slogan{
+    font-size: 8pt;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+}
+.project-item{
+    margin-bottom:15px;
+}
+.project-item span.card-img-top{
+    padding:15px;
+}
+.project-item h3{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color:#2980b9;
+}
+
+@media (min-width: 768px)  {
+    #about{
+        padding-left:15%;
+        padding-right:15%;
+    }
+    #about img{
+        height:150px;
+        width:150px;
+    }
+  }
+  
+@media (min-width: 992px){
+    a.navbar-brand > span.brand-slogan{
+        font-size: 10pt;
+    }
+    footer{
+        padding:15px;
+    }
+    #contact,#skills{
+        padding:15px 8% 15px 8%;
+    }
+    #contact>div.container{
+        padding:20px;
+    }
+    #contact a{
+        text-align: center;
+        display:inline-block;
+        width:100%;
+    }
+    #about{
+        padding-left:20%;
+        padding-right:20%;
+        padding-top:15px;
+        padding-bottom:15px;
+        background: url(img/lights-bk-sm.jpg) repeat-x repeat-y;
+        animation-duration: 0.5s;
+        animation-name: fade-in;
+    }
+    #about a{
+        background: #b74aa0;
+        border: solid 1px #9f518f;
+        padding: 5px 10px;
+        border-radius: 75px;
+        color: #fff;
+    }
+    #about>div{
+        position:relative;
+        animation-name: slide-up;
+        animation-duration: 0.5s;
+    }
+    #about img{
+        margin:0;
+        height:150px;
+        width:150px;
+        float:right;
+    }
+    @keyframes fade-in {
+        0%   {opacity:0.0;}
+        25%  {opacity:0.25;}
+        50%  {opacity:0.5;}
+        75%  {opacity:0.75;}
+        100% {opacity:1.0;}
+    }
+    @keyframes slide-up {
+        0%   {top:170px;}
+        16%  {top:126px;}
+        32%  {top:105px;}
+        48%  {top:84px;}
+        64%  {top:63px;}
+        80%  {top:42px;}
+        96%  {top:21px;}
+        100%  {top:0px;}
+    }
+    #front,#back,#data{
+        position: relative;
+        animation-duration: 0.5s;
+        animation-name: fade-in;
+    }
+  }
