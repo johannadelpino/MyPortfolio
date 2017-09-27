@@ -12,7 +12,6 @@ export class ProjectService {
         return this.http.get('http://localhost:8080/projects')
         .toPromise()
         .then( response => response.json() as Project[])
-        //  .then( response => response.json().data as Project[])
         .catch(this.handleError);
     }
     handleError(error:any): Promise<any>{

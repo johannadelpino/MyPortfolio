@@ -17,5 +17,15 @@ export class ProjectListComponent implements OnInit {
     }
     getProjects():void{
         this.projectService.getProjects().then(projects => this.projects = projects);
+    }
+    closeDescription(event):void{
+        event.target.parentElement.style.height="45px";
+        event.preventDefault();
+        event.stopPropagation();
+    }
+    openDescription(event):void{
+        event.target.parentElement.style.height="100%";
+        event.preventDefault();
+        event.stopPropagation();
     }   
 }

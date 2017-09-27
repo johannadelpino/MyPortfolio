@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
 body{
     background: #f2f2f2 url(img/pattern-bk-sm.png) repeat left top;
     font-family: 'Open Sans', sans-serif;
@@ -85,18 +88,52 @@ a.navbar-brand > span.brand-slogan{
     display: block;
     font-family: 'Open Sans', sans-serif;
 }
-.project-item{
-    margin-bottom:15px;
-}
-.project-item span.card-img-top{
-    padding:15px;
-}
-.project-item h3{
-    font-size: 1.25rem;
-    font-weight: 700;
-    color:#2980b9;
+
+.project-info{
+    position:relative;
+    height:100%;
+    padding-bottom:45px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.project-item a{
+    display:block;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:45px;
+    text-align:center;
+    background:#fff;
+    cursor:pointer;
+    transition: height 1s;
+    overflow:hidden;
+}
+.project-item a span.link-text{
+    width:100%;
+    height:45px;
+    display:block;
+    background:#ebebeb;
+    padding:8px;
+}
+
+.project-item a:hover{
+    z-index:1;
+    height:100%;
+}
+.project-item{
+    padding-bottom:20px;
+}
+.project-item h5{
+    color:#d5af17;
+}
+.project-img-container{
+    background:#ebebeb;
+    margin-bottom:10px;
+}
+.project-img-container>img{
+    display:block;
+    width:100%;
+}
 @media (min-width: 768px)  {
     #about{
         padding-left:15%;
@@ -115,8 +152,11 @@ a.navbar-brand > span.brand-slogan{
     footer{
         padding:15px;
     }
-    #contact,#skills{
+    #skills,#projects{
         padding:15px 8% 15px 8%;
+    }
+    #contact{
+        padding:40px 8% 40px 8%;
     }
     #contact>div.container{
         padding:20px;
@@ -132,8 +172,10 @@ a.navbar-brand > span.brand-slogan{
         padding-top:15px;
         padding-bottom:15px;
         background: url(img/lights-bk-sm.jpg) repeat-x repeat-y;
-        animation-duration: 0.5s;
+        animation-duration: 0.4s;
         animation-name: fade-in;
+        -webkit-animation-name: fade-in;
+        -webkit-animation-duration: 0.4s;
     }
     #about a{
         background: #b74aa0;
@@ -145,7 +187,9 @@ a.navbar-brand > span.brand-slogan{
     #about>div{
         position:relative;
         animation-name: slide-up;
-        animation-duration: 0.5s;
+        animation-duration: 0.4s;
+        -webkit-animation-name: slide-up;
+        -webkit-animation-duration: 0.4s;
     }
     #about img{
         margin:0;
@@ -153,26 +197,59 @@ a.navbar-brand > span.brand-slogan{
         width:150px;
         float:right;
     }
+    #projects{
+        animation-name: fade-in;
+        animation-duration: 0.4s;
+        -webkit-animation-name: fade-in;
+        -webkit-animation-duration: 0.4s;
+    }
     @keyframes fade-in {
-        0%   {opacity:0.0;}
-        25%  {opacity:0.25;}
-        50%  {opacity:0.5;}
-        75%  {opacity:0.75;}
-        100% {opacity:1.0;}
+        0%   {
+            opacity:0.0;
+            animation-timing-function: ease-in-out;
+        }
+        25%  {
+            opacity:0.25;
+            animation-timing-function: ease-in-out;
+        }
+        50%  {
+            opacity:0.5;
+            animation-timing-function: ease-in-out;
+        }
+        100% {
+            opacity:1.0;
+            animation-timing-function: ease-in;
+        }
     }
     @keyframes slide-up {
-        0%   {top:170px;}
-        16%  {top:126px;}
-        32%  {top:105px;}
-        48%  {top:84px;}
-        64%  {top:63px;}
-        80%  {top:42px;}
-        96%  {top:21px;}
-        100%  {top:0px;}
+       
+        0%  {
+            top:150px;
+            opacity:0.0;
+            animation-timing-function: ease-in-out;
+        }
+        25%  {
+            top:127px;
+            opacity:0.25;
+            animation-timing-function: ease-in-out;
+        }
+        50%  {
+            top:85px;
+            opacity:0.5;
+            animation-timing-function: ease-in-out;
+        }
+        100%  {
+            top:0px;
+            opacity:1.0;
+            animation-timing-function: ease-in;
+        }        
     }
     #front,#back,#data{
         position: relative;
         animation-duration: 0.5s;
         animation-name: fade-in;
+
     }
   }
+
+/*#d5af17*/
