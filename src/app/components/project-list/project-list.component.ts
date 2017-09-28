@@ -19,11 +19,13 @@ export class ProjectListComponent implements OnInit {
         this.projectService.getProjects().then(projects => this.projects = projects);
     }
     closeDescription(event):void{
-        event.target.parentElement.style.height="45px";
+        if(event.target.parentElement.style.height=="100%"){
+            event.target.parentElement.style.height="45px";
+        }
         event.preventDefault();
     }
-    openDescription(event):void{
-        event.target.parentElement.style.height="100%";
+    openDescription(event,id):void{
+        document.getElementById(id).style.height="100%";
         event.preventDefault();
     }   
 }

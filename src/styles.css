@@ -114,11 +114,18 @@ a.navbar-brand > span.brand-slogan{
     display:block;
     background:#ebebeb;
     padding:8px;
+    
 }
-
+.project-item a>div.project-desc{
+    overflow-y: scroll;
+    height:75%;
+    text-align: left;
+    padding:0px 20px;
+}
 .project-item a:hover{
     z-index:1;
     height:100%;
+
 }
 .project-item{
     padding-bottom:20px;

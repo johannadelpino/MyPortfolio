@@ -10,10 +10,13 @@
            
             <h5 class="text-center">{{project.role}}</h5>            
             <p class="text-center"><i>{{project.technologies}}</i></p>
-            <a id="project-desc-{{i}}" (mouseover)="openDescription($event)">
+            <a id="project-desc-{{i}}" (mouseover)="openDescription($event, 'project-desc-'+i)">
                 <span class="link-text">Read Description</span>
-                <p>{{project.description}}</p>
-                <span (click)="closeDescription($event)" >Close [X]</span>
+                <div class="project-desc">
+                    {{project.description}}                  
+                </div>
+                <span class="close-project" (click)="closeDescription($event)" >Close [X]</span>
+                
             </a>            
             </div>            
         </div>
