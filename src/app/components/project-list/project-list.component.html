@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-lg-4 project-item" *ngFor="let project of projects ; index as i">                
             <div class="project-info" id="project{{i}}">
-                <div class="project-img-container d-flex flex-column justify-content-center">
+                <div class="project-img-container">
                      <img src='img/{{project.imgs}}'/>
                 </div>             
             <h3 class="text-center">{{project.name}}</h3>

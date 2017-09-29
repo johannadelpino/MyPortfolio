@@ -7,6 +7,7 @@ import { HomeComponent }   from './components/home/home.component';
 import { ProjectListComponent }     from './components/project-list/project-list.component';
 import { PageNotFoundComponent }     from './components/page-not-found/page-not-found.component';
 import { ProjectService } from './services/project/project.service';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -26,7 +27,7 @@ const appRoutes: Routes = [
     BrowserModule,
     HttpModule,
     RouterModule.forRoot(
-      appRoutes
+      appRoutes, { useHash: true }
     )
   ],
   providers: [ProjectService],

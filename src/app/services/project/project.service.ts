@@ -9,7 +9,7 @@ export class ProjectService {
     constructor(private http: Http){};
 
     getProjects(): Promise<Project[]> {
-        return this.http.get('http://localhost:8080/projects')
+        return this.http.get(window.location.origin+':8080/projects')
         .toPromise()
         .then( response => response.json() as Project[])
         .catch(this.handleError);
